@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="vacation.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Open+Sans" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | OCEANS BLUE TRAVEL AGENCY</title>
+</head>
+
+<body>
+<!-- START OF THE HEADER -->
+    <header>
+        <a href="index.html"><h1>Oceans Blue</h1></a>
+        <h2>Travel Agency</h2>
+    </header>
+    
+<!-- START OF THE NAVIGATION -->
+    <nav>
+        <ul class="mainNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="featured-hikes.html">Featured Hikes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="keepOpen"></div>
+    </nav>
+    
+<!-- START OF THE MAIN CONTENT -->
+    <main>
+        <div class="banner-interior">
+            <h1 class="titleInterior">Contact</h1>
+            <h2 class="subtitleInterior">Let's Keep in Touch!</h2>
+        </div>
+        
+        <div class="wrapper-contact">            
+        <div class="contactInfoBox">
+            <i class="far fa-map"></i><h3 class="contactHeading"> Address: </h3><p class="contactInfo">800 W University Pkwy, Orem, UT 84058</p>
+        </div>
+            
+        <div class="contactInfoBox">
+            <i class="fas fa-mobile-alt"></i><h3 class="contactHeading"> Phone: </h3><a href="tel:5555555555" class="contactInfo"><strong>(555) 555-5555</strong></a>
+        </div>
+        
+        <div class="contactInfoBox">
+            <i class="far fa-envelope"></i><h3 class="contactHeading"> Email: </h3><a href="mailto:none@none.com" class="contactInfo"><strong>none@none.com</strong></a>
+        </div>
+        
+            <iframe class="schoolmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.861326732392!2d-111.71738548460827!3d40.27883057938139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9b1eeeb9f5c5%3A0x63523d8413e98aa1!2sUtah+Valley+University!5e0!3m2!1sen!2sus!4v1522867763533" allowfullscreen></iframe>
+            
+        <form action="https://formspree.io/10806252@my.uvu.edu" method="POST" enctype="multipart/form-data" name="contact-form" class="contact-form">
+            <fieldset>
+                <legend>Your Name</legend>
+                <label><span class="form">First Name:</span><input name="first" value="" type="text" placeholder="First Name" class="input-style" required></label>
+                <label><span class="form">Last Name:</span><input name="last" value="" type="text" placeholder="Last Name"  class="input-style" required></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label><span class="form">Email:</span><input name="email" value="" type="email" placeholder="none@none.com" class="input-style" required></label>
+                <label><input name="checkbox" value="yes" type="checkbox" class="checkmark"><span class="form-email-updates">Yes, I like to receive email updates with news and promotions.</span></label>
+                <label><span class="form">Phone:</span><input name="phone" value="" type="tel" placeholder="1234567890" required pattern="[0-9]{10}" class="input-style"></label>
+            </fieldset>
+            
+            <fieldset>          
+                <legend>Additional Information</legend>
+                <label>
+                <span class="form">What service are you most interested in receiving?</span>
+                <select name="service" class="input-style" size="6" required>
+                    <option value="family-portraits">Family Portraits</option>
+                    <option value="self-portraits">Self Portraits</option>
+                    <option value="newborn-photos">Newborn Photos</option>
+                    <option value="wedding-photos">Wedding Photos</option>
+                    <option value="graduation-photos">Graduation Photos</option>
+                    <option value="not-applicable">None of the Above</option>
+                </select>
+                </label>
+                
+                <span class="form">What is the best way to contact you?</span>
+                <label><input type="checkbox" name="mail" value="Email" class="checkmark">Email</label>
+                <label><input type="checkbox" name="tel" value="Phone" class="checkmark">Phone</label>
+                
+                <span class="form">What is the best time of day to contact you?</span>
+                <label><input type="radio" name="time" value="day" class="radio">Day (8am-5pm)</label>
+                <label><input type="radio" name="time" value="night" class="radio">Night (5pm-8pm)</label>
+                <label><input type="radio" name="time" value="both" class="radio">Both (8am-8pm)</label>
+                
+                <label><span class="form">Any questions, comments, or concerns?</span>
+                <textarea name="message" placeholder="Questions, comments, or concerns?" class="form-message"></textarea></label>
+            </fieldset>  
+        
+            <input type="hidden" name="_subject" value="Message from Website">
+            <input type="hidden" name="_next" value="http://rconatser.com/sent.html">
+            
+            <input type="submit" name="submit" value="Contact Me" class="form-button">
+        
+        </form>
+        </div>
+    </main>
+    
+<!-- START OF THE FOOTER -->
+    <footer class="page-footer">
+        <ul class="mainNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="featured-hikes.html">Featured Hikes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="keepOpen"></div>
+        
+        <p>&copy; 2018 &bull; Misty Mountain Photography &bull; Built by Rachel Conatser</p>
+    </footer>
+    
+</body>
+</html>
