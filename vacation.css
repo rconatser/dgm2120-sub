@@ -39,9 +39,9 @@ header h1:hover {
 }
 
 header h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 8px;
     font-weight: lighter;
     margin-top: -8px;
     font-size: 1.6rem;
@@ -55,36 +55,44 @@ header h2 {
 nav {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    background-color: #45596E;
+    background-color: #009CC5;
     text-align: center;
+    padding-bottom: 0px;
     
 }
 
 nav ul.mainNav li {
     list-style-type: none;
     display: inline-block;
+    padding-top: 1px;
 }
 
-nav ul.mainNav li.active {
-    background-color: #00356E;
+nav ul.mainNav li.active { /* REVISE */
+    background-color: #FDE74C !important;
+    transition: 0.5s;
 }
+    
+    nav ul.mainNav li.active a {
+        border-bottom: 5px solid #FDE74C;
+    }
 
 nav ul.mainNav li a {
     display: block;
+    letter-spacing: 1.2px;
     padding: 8px 10px;
-    color: #ffffff;
+    color: #FFF;
     font-size: 18px;
     text-decoration-line: none;
-    border-bottom: 5px solid #45596E;
+    border-bottom: 5px solid #009CC5;
     padding-top: 12px;
     transition: 0.3s;
 }
 
 nav ul.mainNav li a:hover {
-    color: #96C0ED;
-    border-bottom: 5px solid #aaa;
+    color: #35B1D3;
+    border-bottom: 5px solid #35B1D3;
 }
-
+    
 }
 .keepOpen {
     clear: both;
@@ -113,12 +121,12 @@ main {
         box-shadow: 20px 20px 200px #333 inset;
     }
 
-    div.overlay {
+    div.banner-home h1.title, div-banner-home h2.subtitle{
         width: 100%;
         background-color: rgba(0,0,0, .7);
     }
 
-    div.overlay h1.title {
+    div.banner-home h1.title, div-banner-home h2.subtitle {
         text-align: center;
         color: #FFF;
         padding-top: 151px;
