@@ -63,7 +63,7 @@ nav ul.mainNav li {
 }
 
 nav ul.mainNav li.active { /* REVISE */
-    background-color: rgba(255,255,255,.3); !important;
+    background-color: rgba(255,255,255,.3) !important;
     transition: 0.5s;
 }
 
