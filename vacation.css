@@ -425,6 +425,7 @@ main .form-button {
     font-size: 1.2rem;
     color: #FFF;
     transition: 0.3s;
+    
 }
 
 main .form-button:hover{
@@ -432,6 +433,7 @@ main .form-button:hover{
     background-color: rgba(255,255,255,0);
     color: #35B1D3;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 main .input-style, .form-message {
@@ -530,16 +532,21 @@ main button {
 }
 
 main button:hover {
-    color: #08B7F0;
-    background-color: rgba(255,255,255,0);
+    border-color: #66DEFE;
+    background-color: #66DEFE;
     border-radius: 30px;
     transition: 0.3s;
     cursor: pointer;
 }
 
+main button a {
+    color: white;
+    text-decoration: none;
+}
+
 main button.center-button {
-    margin: 1% 30%;
-    width: 40%;
+    margin: 1% 30% !important;
+    width: 40% !important;
 }
 
 figure button.center-button {
@@ -784,8 +791,8 @@ figure.myGallery img {
     margin: .5em 15% !important;
 }
     main button.center-button {
-        margin: 1% 40%;
-        width: 20%;
+        margin: 1% 40% !important;
+        width: 20% !important;
     }
     
     button.center-button, button.left-button {
@@ -825,10 +832,12 @@ figure.myGallery img {
     width: 70% !important;
     margin: .5em 15% !important;
 }
+/*
     main button.center-button {
         margin: 1% 40%;
         width: 20%;
     }
+*/
     
     button.center-button, button.left-button {
         width: 40% !important;
