@@ -184,7 +184,7 @@ figure.myGallery img {
 
 iframe.video {
     border: none !important;
-    height: 500px;
+    height: 350px;
     width: 50%;
     margin: 0 25%;
     margin-bottom: 5%;
@@ -221,8 +221,8 @@ main h2.center-h2-about {
     padding: 5em;
 }
 
-div.wrapper-media h2.center-h2 {
-    padding: 0 !important;
+div.wrapper-video h2.center-h2 {
+    padding-top: 1.5em;
 }
 
 main div.cta h2.center-h2 {
@@ -261,13 +261,14 @@ main .interiorHeading {
 }
 
 main .contactInfoBox {
-    background-color: #00356E;
+    background-color: #35B1D3;
     display: block;
     margin: 2em 10em;
     padding: 1rem 1rem;
     border-radius: 100px;
     text-align: center;
     min-width: 50%;
+    box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
 }
 
 main .contactHeading {
@@ -288,6 +289,12 @@ main .far, main .fas {
     padding: 5px 0px;
     color: white;
     font-size: 48px;
+}
+
+iframe.schoolmap {
+    width: 100%; 
+    height: 200px;
+    border: none;
 }
 
 main h1.sent-text {
@@ -333,6 +340,33 @@ main h2.left-h2-destinations {
     font-size: 2em;
 }
 
+main h2.center-h2-destinations {
+    text-align: center;
+    margin: 0 10%;
+    padding-top: 1em;
+    color: #35B1D3;
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+h3.center-h3 {
+    text-align: center;
+    margin: 0 10%;
+    padding-bottom: 5%;
+    color: #005f79;
+}
+
+.section-bottom div.location {
+    width: 25%;
+    float: left;
+    margin-bottom: 2em;
+}
+
+.section-bottom div.location button {
+    width: 70%;
+    margin: .5em 15%;
+}
+
 blockquote.testimonials {
     margin-top: 0;
 }
@@ -362,7 +396,7 @@ main form.contact-form legend {
 
 main form.contact-form label {
     display: block;
-    color: #45596E;
+    color: #00232d;
 }
 
 main form.contact-form span.form {
@@ -379,15 +413,14 @@ main .form-email-updates {
 main form.contact-form, .form-message, select, input {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight: 600;
     color: #00356E;
 }
 
 main .form-button {
     padding: .5rem 2rem;
     margin: .5rem 10% 3rem 10%;
-    background-color: #00356E;
-    border: 1px solid #00356E !important;
+    background-color: #35B1D3;
+    border: 2px solid #35B1D3 !important;
     font-family: 'Montserrat', sans-serif !important;
     font-size: 1.2rem;
     color: #FFF;
@@ -395,15 +428,15 @@ main .form-button {
 }
 
 main .form-button:hover{
-    background-color: #45596E;
-    border: 1px solid #45596E !important;
-    color: #FFF;
+    border: 2px solid #35B1D3 !important;
+    background-color: rgba(255,255,255,0);
+    color: #35B1D3;
     border-radius: 30px;
 }
 
 main .input-style, .form-message {
     border: none;
-    border-bottom: 1px solid #00356E;
+    border-bottom: 1px solid #009CC5;
     border-radius: 20px;
     margin-top: .2rem !important;
     color: #333;
@@ -415,10 +448,10 @@ main .input-style, .form-message {
 
 main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:focus {
     border: none;
-    border-bottom: 1px solid #7597BA;
+    border-bottom: 1px solid #FDE74C;
 }
 
-.wrapper {
+.wrapper, .wrapper-video{
     min-width: 200px !important;
     max-width: 1100px !important;
     margin: 0 auto;
@@ -428,6 +461,10 @@ main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:
     border-bottom-right-radius: 20px;
     box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
     text-shadow: 1px 1px 2px rgba(51,51,51,.2);
+}
+
+.wrapper-video {
+    margin-top: -22px;
 }
 
 .wrapper-media {
@@ -457,13 +494,34 @@ main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:
     text-shadow: 1px 1px 2px rgba(51,51,51,.2);
 }
 
+div.price {
+    padding: .5em 2em;
+    width: 25%;
+    margin-left: 12.5%;
+    margin-bottom: 1em;
+    color: white;
+    background-color: #08B7F0; /* bright blue color */
+    border: 2px solid #08B7F0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1em !important;
+}
+
+div.price h3 {
+    text-align: center;
+}
+
+div.section .honeymoon-package {
+    padding-bottom: 1em;
+}
+
 main button {
     padding: .75em 3em;
     margin-left: 2em;
     margin-bottom: 1em;
     color: white;
-    background-color: #FDE74C; /* yellow color */
-    border: 2px solid #FDE74C;
+    background-color: #08B7F0; /* bright blue color */
+    border: 2px solid #08B7F0;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 1em !important;
@@ -471,7 +529,7 @@ main button {
 }
 
 main button:hover {
-    color: #FDE74C;
+    color: #08B7F0;
     background-color: rgba(255,255,255,0);
     border-radius: 30px;
     transition: 0.3s;
@@ -498,10 +556,34 @@ main div.cta {
     padding: 2% 0;
 }
 
-main div.section {
+main div.section, div.section-bottom {
     background-color: #eee;
 }
 
+main div.section-bottom {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-bottom: 2em;
+}
+
+main ul.recognition {
+    padding: 0 15%;
+    list-style: circle;
+}
+
+@media only screen and (min-width: 1025px) {
+    .winter-getaway h2 {
+        padding-top: 3.5em !important;
+    }
+
+    .honeymoon-package h2 {
+        padding-top: 4.2em !important;
+    }
+
+    .island-adventure h2 {
+        padding-top: 2.5em !important;
+    }
+}
 /*--------------------------------*/
 
 /*------------ FOOTER ------------*/
@@ -553,6 +635,20 @@ footer.page-footer {
 
 /*------------- MISC/NAVIGATION RULES -------------*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    div.price {
+        width: 40%;
+        margin: 0 10% !important;
+    }
+    
+    div.winter-getaway figure.myGallery, div.island-adventure figure.myGallery {
+        margin-top: 2em !important;
+    }
+    
+    div.section div.honeymoon-package {
+        padding-top: 1em !important;
+        margin-top: 1em;
+    }
+
     main ol.services, ul.contact {
         padding: 1em 0px 1em 30% !important;
     }
@@ -590,57 +686,73 @@ figure.myGallery img {
     width: 100%;
 }
     
-nav {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    background: linear-gradient(#66DEFE, #009CC5);
-    text-align: center;
-    margin-bottom: 5px;
-}
+    nav {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        background: linear-gradient(#009CC5, #005f79);
+        text-align: center;
+        padding-top: .05em;
+        padding-bottom: 1em
+    }
 
-nav ul.mainNav {
-    list-style-type: none;
-    padding: 0px;
-}
+    nav ul.mainNav {
+        list-style-type: none;
+        padding: 0px;
+    }
 
-nav ul.mainNav li.active {
-    background-color: #00356E;
-}
+    nav ul.mainNav li {
+        font-family: 'Open Sans', sans-serif;
+        display: block;
+        margin: .5em 5%;
+        border: 2px solid rgba(255,255,255,.3);
+        border-radius: 30px;
+    }
 
-nav ul.mainNav li a {
-    display: block;
-    padding: 10px 10px;
-    color: #ffffff;
-    font-size: 18px;
-    text-decoration-line: none;
+    nav ul.mainNav li.active {
+        background-color: rgba(255,255,255,.3);
+        border-color: rgba(255,255,255,.3);
+        border-radius: 30px;
+    }
 
-}
+    nav ul.mainNav li a {
+        display: block;
+        padding: 10px 10px;
+        color: #ffffff;
+        font-size: 16px;
+        text-decoration-line: none;
+    }
 
-nav ul.mainNav li a:hover {
-    color: #96C0ED;
-    background-color: #00356E;
-}
-    
-
+    nav ul.mainNav li a:hover {
+        color: #fff;
+        background-color: rgba(255,255,255,.3);
+        border-color: rgba(255,255,255,.3);
+        border-radius: 30px;
+        transition: 0.3s;
+    }
     
 /*---FOOTER NAVIGATION---*/
     footer {
-        background-color: #1a1a1a;
+        background-color: #111;
     }
     
     footer ul.mainNav{
         padding: 0px;
         list-style-type: none;
-        background: linear-gradient(#333, #1a1a1a);
+        background: linear-gradient(#00232d, #111);
     }
     
      footer ul.mainNav li {
         font-family: 'Open Sans', sans-serif;
         display: block;
+        margin: .5em 5%;
+        border: 2px solid rgba(0, 156, 197,.1);
+        border-radius: 30px;
     }
 
     footer ul.mainNav li.active {
-        background-color: #666;
+        background-color: rgba(0, 156, 197, .1);
+        border-color: rgba(0, 156, 197,.1);
+        border-radius: 30px;
     }
 
     footer ul.mainNav li a {
@@ -649,18 +761,69 @@ nav ul.mainNav li a:hover {
         color: #ffffff;
         font-size: 16px;
         text-decoration-line: none;
-
     }
 
     footer ul.mainNav li a:hover {
         color: #fff;
-        background-color: #666;
+        background-color: rgba(255,255,255,.1);
+        border-color: rgba(255,255,255,.1);
+        border-radius: 30px;
+        transition: 0.3s;
     }
-/*-----------------------*/
+    /*--------------------------------*/
+    
+    .section-bottom div.location {
+        width: 50%;
+        float: left;
+        margin-bottom: 2em;
+    }
+
+.section-bottom div.location button {
+    width: 70% !important;
+    margin: .5em 15% !important;
+}
+    main button.center-button {
+        margin: 1% 40%;
+        width: 20%;
+    }
+    
+    button.center-button, button.left-button {
+        width: 40% !important;
+        margin: 2% 30% !important;
+    }
 }
 
 
 @media only screen and (max-width: 768px) {
+    
+    main .contactInfoBox {
+        width: 90%;
+        margin: 2em 5%;
+    }
+    
+    div.winter-getaway figure.myGallery, div.island-adventure figure.myGallery {
+        margin-top: 2em !important;
+    }
+    
+    div.section div.honeymoon-package {
+        padding-top: 1em !important;
+        margin-top: 1em;
+    }
+    
+    div.price {
+        width: 50%;
+        margin: 0 25%;
+    }
+    .section-bottom div.location {
+        width: 50%;
+        float: left;
+        margin-bottom: 2em;
+    }
+
+.section-bottom div.location button {
+    width: 70% !important;
+    margin: .5em 15% !important;
+}
     main button.center-button {
         margin: 1% 40%;
         width: 20%;
@@ -799,6 +962,29 @@ nav ul.mainNav li a:hover {
     figure.myGallery img {
         padding: .8em;
         width: 100%;
+    }
+    
+    @media only screen and (max-width: 450px) {
+        div.cta .center-button, button.center-button, button.left-button {
+            width: 90% !important;
+            margin: 1em 5% !important;
+        }
+        div.price {
+            width: 95%;
+            margin: 1em 2.5%;
+        }
+        
+        .section-bottom div.location {
+            width: 100%;
+            float: none !important;
+            margin-bottom: 2em;
+        }
+
+        .section-bottom div.location button {
+            width: 95% !important;
+            margin: .25em 2.5% !important;
+        }
+        
     }
     
 }
