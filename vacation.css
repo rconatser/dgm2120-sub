@@ -362,9 +362,9 @@ h3.center-h3 {
     margin-bottom: 2em;
 }
 
-.section-bottom div.location button {
-    width: 70%;
-    margin: .5em 15%;
+.section-bottom div.location .button .center-button {
+    width: 70% !important;
+    margin: .5em 15% !important;
 }
 
 blockquote.testimonials {
@@ -429,9 +429,9 @@ main .form-button {
 }
 
 main .form-button:hover{
-    border: 2px solid #35B1D3 !important;
-    background-color: rgba(255,255,255,0);
-    color: #35B1D3;
+    border: 2px solid #66DEFE !important;
+    background-color: #66DEFE;
+    color: white;
     border-radius: 30px;
     cursor: pointer;
 }
@@ -477,9 +477,8 @@ main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:
     margin-top: -20px;
     background-color: rgba(255,255,255,.95);
     padding-top: 1rem;
-    padding-bottom: 2075px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
     text-shadow: 1px 1px 2px rgba(51,51,51,.2);
 }
@@ -518,9 +517,10 @@ div.section .honeymoon-package {
     padding-bottom: 1em;
 }
 
-main button {
+form.button .center-button, form.button .left-button {
     padding: .75em 3em;
     margin-left: 2em;
+    margin-right: 2em;
     margin-bottom: 1em;
     color: white;
     background-color: #08B7F0; /* bright blue color */
@@ -531,7 +531,7 @@ main button {
     transition: 0.3s;
 }
 
-main button:hover {
+form.button .center-button:hover, form.button .left-button:hover {
     border-color: #66DEFE;
     background-color: #66DEFE;
     border-radius: 30px;
@@ -539,22 +539,17 @@ main button:hover {
     cursor: pointer;
 }
 
-main button a {
-    color: white;
-    text-decoration: none;
-}
-
-main button.center-button {
+main .button .center-button {
     margin: 1% 30% !important;
     width: 40% !important;
 }
 
-figure button.center-button {
+figure .button .center-button {
     margin-top: 0 !important;
     margin-bottom: 2em !important;
 }
 
-main button.left-button {
+main .button .left-button {
     margin: 2% 0;
     margin-left: 10%;
 }
@@ -568,7 +563,7 @@ main div.section, div.section-bottom {
     background-color: #eee;
 }
 
-main div.section-bottom {
+main div.section-bottom, div.wrapper-media div.cta {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     padding-bottom: 2em;
@@ -786,16 +781,16 @@ figure.myGallery img {
         margin-bottom: 2em;
     }
 
-.section-bottom div.location button {
+.section-bottom div.location .button .center-button {
     width: 70% !important;
     margin: .5em 15% !important;
 }
-    main button.center-button {
+    main .button .center-button {
         margin: 1% 40% !important;
         width: 20% !important;
     }
     
-    button.center-button, button.left-button {
+    .button .center-button, .button .left-button {
         width: 40% !important;
         margin: 2% 30% !important;
     }
@@ -828,18 +823,16 @@ figure.myGallery img {
         margin-bottom: 2em;
     }
 
-.section-bottom div.location button {
+.section-bottom div.location .button {
     width: 70% !important;
     margin: .5em 15% !important;
 }
-/*
-    main button.center-button {
+    main button .center-button {
         margin: 1% 40%;
         width: 20%;
     }
-*/
     
-    button.center-button, button.left-button {
+    .button .center-button, .button .left-button {
         width: 40% !important;
         margin: 2% 30% !important;
     }
@@ -975,7 +968,7 @@ figure.myGallery img {
     }
     
     @media only screen and (max-width: 450px) {
-        div.cta .center-button, button.center-button, button.left-button {
+        div.cta .center-button, .button.center-button, .button.left-button {
             width: 90% !important;
             margin: 1em 5% !important;
         }
@@ -990,7 +983,7 @@ figure.myGallery img {
             margin-bottom: 2em;
         }
 
-        .section-bottom div.location button {
+        .section-bottom div.location .button .center-button{
             width: 95% !important;
             margin: .25em 2.5% !important;
         }
