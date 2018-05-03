@@ -465,6 +465,7 @@ main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:
 
 .wrapper-video {
     margin-top: -22px;
+    padding-bottom: 3em;
 }
 
 .wrapper-media {
