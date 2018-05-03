@@ -291,12 +291,6 @@ main .far, main .fas {
     font-size: 48px;
 }
 
-iframe.schoolmap {
-    width: 100%; 
-    height: 200px;
-    border: none;
-}
-
 main h1.sent-text {
     text-align: center;
     padding-top: 50px;
@@ -362,7 +356,14 @@ h3.center-h3 {
     margin-bottom: 2em;
 }
 
-.section-bottom div.location .button .center-button {
+div.wrapper-video div.location {
+    width: 45%;
+    float: left;
+    margin: 0 2.5%;
+    margin-bottom: 2em;
+}
+
+.section-bottom div.location .button .center-button, div.location .button .center-button {
     width: 70% !important;
     margin: .5em 15% !important;
 }
@@ -775,13 +776,13 @@ figure.myGallery img {
     }
     /*--------------------------------*/
     
-    .section-bottom div.location {
+    .section-bottom div.location, div.location {
         width: 50%;
         float: left;
         margin-bottom: 2em;
     }
 
-.section-bottom div.location .button .center-button {
+.section-bottom div.location .button .center-button, div.location .button .center-button {
     width: 70% !important;
     margin: .5em 15% !important;
 }
