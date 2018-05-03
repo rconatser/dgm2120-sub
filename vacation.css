@@ -172,7 +172,7 @@ figure.myGallery {
     float: left;
     margin: 3% 3%;
     background-color: white;
-    width: 43%;
+    width: 44%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px 2px rgba(51,51,51,.2);
 }
@@ -185,8 +185,8 @@ figure.myGallery img {
 iframe.video {
     border: none !important;
     height: 500px;
-    width: 90%;
-    margin: 0 5%;
+    width: 50%;
+    margin: 0 25%;
     margin-bottom: 5%;
     box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
 }
@@ -339,7 +339,9 @@ blockquote.testimonials {
 
 div.testimonial {
     margin-bottom: 2em;
-    background-color: rgba(0, 156, 197, .3);
+    background-color: rgba(0, 156, 197, .1);
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
 }
 
 /* --- CONTACT PAGE (FORM) --- */
@@ -435,7 +437,7 @@ main .input-style:hover, .input-style:focus, .form-message:hover, .form-message:
     margin-top: -20px;
     background-color: rgba(255,255,255,.95);
     padding-top: 1rem;
-    padding-bottom: 110em;
+    padding-bottom: 2075px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0px 5px 10px rgba(51,51,51,.5), 0px 5px 10px rgba(51,51,51,.5);
@@ -477,8 +479,8 @@ main button:hover {
 }
 
 main button.center-button {
-    margin: 1% 40%;
-    width: 20%;
+    margin: 1% 30%;
+    width: 40%;
 }
 
 figure button.center-button {
@@ -659,6 +661,11 @@ nav ul.mainNav li a:hover {
 
 
 @media only screen and (max-width: 768px) {
+    main button.center-button {
+        margin: 1% 40%;
+        width: 20%;
+    }
+    
     button.center-button, button.left-button {
         width: 40% !important;
         margin: 2% 30% !important;
